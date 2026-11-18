@@ -1,0 +1,52 @@
+{
+  "name": "lumen-servicecloud-mock",
+  "version": "1.0.0",
+  "description": "CAP service that stands in for SAP Service Cloud (customers, cases, appointments) in the Lumen Appliances agent lab",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@sap/cds": "^10"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^3",
+    "@sap/cds-dk": "^10"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "[development]": {
+          "kind": "mocked",
+          "users": {
+            "parloa-agent": {
+              "password": "agent",
+              "roles": [
+                "AgentTool"
+              ]
+            },
+            "intruder": {
+              "password": "nope",
+              "roles": []
+            }
+          }
+        },
+        "[production]": {
+          "kind": "xsuaa"
+        }
+      },
+      "messaging": {
+        "[development]": {
+          "kind": "file-based-messaging"
+        },
+        "[production]": {
+          "kind": "local-messaging"
+        }
+      }
+    }
+  }
+}

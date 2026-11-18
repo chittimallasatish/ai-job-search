@@ -1,0 +1,23 @@
+{
+  "name": "lumen-sap-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server exposing SAP-backed customer-service tools (via SAP API Management / Cloud Integration) to any MCP-capable AI agent",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "lumen-sap-mcp": "server.mjs"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "start:http": "MCP_TRANSPORT=http node server.mjs",
+    "inspect": "npx @modelcontextprotocol/inspector node server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "express": "^5.1.0",
+    "zod": "^4.0.0"
+  }
+}

@@ -1,0 +1,4 @@
+ID;firstName;lastName;phone;email;postalCode
+1000001;Maria;Gonzalez;+12125550101;maria.gonzalez@example.com;10001
+1000002;James;Okafor;+12125550102;james.okafor@example.com;10002
+1000003;Priya;Raman;+12145550103;priya.raman@example.com;75201
