@@ -7,10 +7,13 @@ SAP data mid-conversation, and then you turn it into a repeatable playbook.
 ## The scenario
 **Lumen Appliances** (fictional) sells dishwashers, fridges and ovens and runs SAP. Its AI phone
 agent "Leo" must:
-1. verify the caller → 2. tell them where their order is (S/4HANA, or ECC for legacy orders) →
-3. open a service case for a broken appliance (Service Cloud) → 4. reschedule a technician →
-5. hand off to a human with an AI summary → 6. notify proactively when something changes (events) →
-7. open IT tickets in ServiceNow for internal callers.
+1. Verify the caller.
+2. Tell them where their order is (S/4HANA, or ECC for legacy orders).
+3. Open a service case for a broken appliance (Service Cloud).
+4. Reschedule a technician.
+5. Hand off to a human with an AI summary.
+6. Notify proactively when something changes (events).
+7. Open IT tickets in ServiceNow for internal callers.
 
 This mirrors the flow SAP used to certify Parloa as an Endorsed App: voice authentication,
 service-order retrieval, appointment rescheduling, troubleshooting, and hand-off with an AI summary.
