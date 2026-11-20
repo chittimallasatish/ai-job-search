@@ -1,0 +1,11 @@
+@EndUserText.label : 'Lumen order status (RFC result)'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zlumen_s_order_status {
+  order_id        : abap.char(10);
+  customer_id     : abap.char(10);
+  requested_date  : abap.dats;
+  process_status  : abap.char(1);
+  delivery_status : abap.char(1);
+  net_amount      : abap.dec(15,2);
+  currency        : abap.cuky;
+}

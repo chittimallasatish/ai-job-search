@@ -1,0 +1,15 @@
+@EndUserText.label : 'Lumen demo sales orders (ECC stand-in)'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #ALLOWED
+define table zlumen_orders {
+  key client      : abap.clnt not null;
+  key order_id    : abap.char(10) not null;
+  customer_id     : abap.char(10);
+  requested_date  : abap.dats;
+  process_status  : abap.char(1);
+  delivery_status : abap.char(1);
+  net_amount      : abap.dec(15,2);
+  currency        : abap.cuky;
+}

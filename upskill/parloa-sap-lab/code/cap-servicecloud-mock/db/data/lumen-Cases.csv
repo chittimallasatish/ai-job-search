@@ -1,0 +1,2 @@
+ID;caseNumber;customer_ID;subject;description;priority;status;channel;product;salesOrder
+6f1d2c3a-1111-4a5b-9c0d-000000000001;100001;1000001;Dishwasher shows error E24;Water does not drain after cycle;HIGH;IN_PROCESS;VOICE;DW-500;
